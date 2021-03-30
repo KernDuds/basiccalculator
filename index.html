@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Aula 2</title>
+
+    <script>
+        var firstValue = parseFloat(prompt("Informe o primeiro valor:"))
+        var secondValue = parseFloat(prompt("Informe o segundo valor:"))
+
+        var operation = prompt("0 = Exponenciação, 1 = Divisão, 2 = Multiplicação, 3 = Soma, 4 = Subtração")
+        if(operation == 0){
+            var result = Math.pow(firstValue, secondValue);
+            document.write("<h1>" + firstValue + " ^ " + secondValue + " = " + result + "</h1>" )
+        }
+        else if(operation == 1){
+            result = firstValue / secondValue
+            result = result.toFixed(2)
+            document.write("<h1>" + firstValue + " / " + secondValue + " = " + result + "</h1>" )
+            }
+        else if(operation == 2){
+            result = firstValue * secondValue
+            document.write("<h1>" + firstValue + " x " + secondValue + " = " + result + "</h1>")
+            }
+        else if(operation == 3){
+            result = firstValue + secondValue
+            document.write("<h1>" + firstValue + " + " + secondValue + " = " + result + "</h1>")
+            }
+        else if(operation ==4){
+            result = firstValue - secondValue
+            document.write("<h1>" + firstValue + " - " + secondValue + " = " + result + "</h1>")
+            }
+        else{
+            document.write("<h1>" + "Opção Inválida" + "</h1>")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
